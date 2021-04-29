@@ -4,10 +4,15 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 #HINT 1: https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal
 #HINT 2: https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
+print("Welcome to the tip calculator")
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill? "))
 
-bill = float(input("What is the value of the bill?"))
-people = int(input("How many people will be split"))
-bill_result = round((bill / people) * 1.12, 2)
+tip_as_percent = tip / 100.0
+total_tip_amount = bill * tip_as_percent
+total = bill + total_tip_amount
+final_amount = round(total / people, 2)
 
 print(f"The value of the bill is ${bill}, split by {people}")
-print(f"Total for each to pay {bill_result}")
+print(f"Eash person should pay {final_amount}")
