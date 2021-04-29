@@ -1,5 +1,16 @@
 # 100dayspython
 
+# Day 1
+
+```python
+input()
+valor = input("Qual o valor?")
+
+len()
+tamanho = len(valor)
+
+```
+
 # Day 2
 
 ```python
